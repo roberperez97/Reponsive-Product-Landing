@@ -88,7 +88,7 @@ body {
   height: 65px;
   border-radius: 16px;
   margin-bottom: 40px;
-  background: url(./../../img/computer.svg) #F16718;
+  background: url(./img/computer.svg) #F16718;
   display: inline-block;
   background-repeat: no-repeat;
   background-position: center center;
@@ -99,7 +99,7 @@ body {
   height: 65px;
   border-radius: 16px;
   margin-bottom: 40px;
-  background: url(../../img/bluetooh.svg) #F16718;
+  background: url(./img/bluetooh.svg) #F16718;
   display: inline-block;
   background-repeat: no-repeat;
   background-position: center center;
@@ -110,7 +110,7 @@ body {
   height: 65px;
   border-radius: 16px;
   margin-bottom: 40px;
-  background: url(../../img/battery.svg) #F16718;
+  background: url(./img/battery.svg) #F16718;
   display: inline-block;
   background-repeat: no-repeat;
   background-position: center center;
@@ -121,7 +121,7 @@ body {
   height: 65px;
   border-radius: 16px;
   margin-bottom: 40px;
-  background: url(../../img/light.svg) #F16718;
+  background: url(./img/light.svg) #F16718;
   display: inline-block;
   background-repeat: no-repeat;
   background-position: center center;
