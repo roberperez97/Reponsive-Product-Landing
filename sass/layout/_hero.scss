@@ -1,0 +1,62 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    position: relative;
+    @include breakpoint(tablet){
+        flex-direction: row;
+        align-items: center;
+    }
+    margin-bottom: 24px;
+    &-info{
+        &-title{
+            margin-bottom: 32px;
+            font-size: 48px;
+            line-height: 48px;
+            @include breakpoint(desktop){
+                font-size: 56px;
+                line-height: 56px;
+            }
+        }
+        &-description{
+            margin-bottom: 32px;
+            line-height: 26px;
+            @include breakpoint(desktop){
+                font-size: 18px;
+            }
+        }
+        &-ctas{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &-image{
+        &-principal{
+            img{
+                transform: translate(40px);
+                @include breakpoint(tablet){
+                    width: 478px;
+                    height: 425px;
+                }
+                @include breakpoint(desktop){
+                    width: 540px;
+                    height: 480px;
+                    transform: none;
+                }
+            }
+        }
+    }
+
+    &-image::after{
+        @include breakpoint(desktop){
+            content: "";
+            position: absolute;
+            width: 455px;
+            height: 236px;
+            right: -550px;
+            top: 0px;
+            border-radius: 20px;
+            background-color: $light-grey;
+        }
+    }
+}

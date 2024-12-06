@@ -1,0 +1,30 @@
+.primary-button{
+    @include buttonStyle();
+    @include resetA();
+    background-color: $dark-orange;
+    color: $white;
+    &:hover{
+        background-color: $light-orange;
+    }
+}
+
+.secondary-button{
+    @include buttonStyle();
+    @include resetA();
+    background-color: $light-grey;
+    color: $dark-blue;
+    &:hover{
+        background-color: $dark-blue;
+        color: $white;
+    }
+}
+
+.terciary-button{
+    @include buttonStyle();
+    @include resetA();
+    background-color: $white;
+    color: $light-blue;
+    &:hover{
+        color: $dark-blue;
+    }
+}

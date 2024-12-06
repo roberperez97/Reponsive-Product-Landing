@@ -1,0 +1,80 @@
+.product{
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+    position: relative;
+    @include breakpoint(desktop){
+        flex-direction: row;
+        gap: 125px;
+        align-items: center;
+    }
+    margin-bottom: 111px;
+    &-images{
+        display: flex;
+        gap: 24px;
+        img:first-child{
+            display: relative;
+            @include breakpoint(tablet){
+                width: 214px;
+                height: 320px;
+            }
+            @include breakpoint(desktop){
+                width: 255px;
+                height: 480px;
+            }
+        }
+        img:last-child{
+            @include breakpoint(tablet){
+                width: 400px;
+                height: 320px;
+                aspect-ratio: 1/1;
+            }
+            @include breakpoint(desktop){
+                width: 445px;
+                height: 480px;
+            }
+        }
+        @include breakpoint(tablet){
+            transform: none;
+        }
+        transform: translate(-60px);
+    }
+    &-images::before{
+        @include breakpoint(desktop){
+            content: "";
+            position: absolute;
+            width: 455px;
+            height: 236px;
+            left: -550px;
+            bottom: 0px;
+            border-radius: 20px;
+            background-color: $light-grey;
+        }
+    }
+    &-info{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        @include breakpoint (tablet){
+            flex-direction: row;
+            align-items: center;
+        }
+        @include breakpoint(desktop){
+            flex-direction: column;
+            align-items: baseline;
+        }
+        &-title{
+            text-align: center;
+            @include breakpoint(tablet){
+                text-align: left;
+            }
+        }
+        &-description{
+            text-align: center;
+            @include breakpoint(tablet){
+                text-align: left;
+            }
+            line-height: 26px;
+        }
+    }
+}

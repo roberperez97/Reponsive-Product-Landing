@@ -1,0 +1,28 @@
+#computer{
+    @include iconBox();
+    background: (url(./../../img/computer.svg) $dark-orange);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;    
+}
+#bluetooth{
+    @include iconBox();
+    background: (url(../../img/bluetooh.svg) $dark-orange);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;     
+}
+#battery{
+    @include iconBox();
+    background: (url(../../img/battery.svg) $dark-orange);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;     
+}
+#light{
+    @include iconBox(); 
+    background: (url(../../img/light.svg) $dark-orange);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;     
+}
